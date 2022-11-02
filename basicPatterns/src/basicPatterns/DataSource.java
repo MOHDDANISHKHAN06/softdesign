@@ -1,7 +1,9 @@
 package basicPatterns;
 
 public class DataSource extends Observable {
-
+	
+	private Graph gr; //??????
+	 
 	int[] points = new int[50];
 	
 	public void setData() {
