@@ -1,7 +1,6 @@
 package basicPatterns;
 
 public abstract class Observable {
-
 	private Observer obs1;
 
 	public Observer getObs1() {
@@ -12,9 +11,10 @@ public abstract class Observable {
 		this.obs1 = obs1;
 	}
 	
-	public void notifying()
+	public void notifying(int[] points)
 	{
-		obs1.update();
+		
+		obs1.update(points);
 	}
 }
 
